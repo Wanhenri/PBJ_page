@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
 
+import FormLead from "../../components/FormLead";
+
+import { Wrapper, Section } from './styles';
+
 import AcomodacaoPousada from "../../components/acomodacao";
 
 import TitleAcomodacao from "../../components/TitleAcomodacao"
@@ -8,24 +12,23 @@ import TitleNovidade from "../../components/TitleNovidade"
 import SubtitlePousada from "../../components/SubtitlePousada";
 
 const Home = () => (
-    <Fragment>
-        <TitleAjuda>COMO PODEMOS TE AJUDAR?</TitleAjuda>
+    <Wrapper>
+        <Section>
+            <TitleAjuda>COMO PODEMOS TE AJUDAR?</TitleAjuda>
+                
+            <TitleAcomodacao>ACOMODAÇÕES COM QUALIDADE E CONFORTO</TitleAcomodacao>
+                
+            <SubtitlePousada>
+                Acomodações com todos os confortos de sua casa e muito mais. 
+                Venha conferir       
+            </SubtitlePousada>
         
-        <TitleAcomodacao>ACOMODAÇÕES COM QUALIDADE E CONFORTO</TitleAcomodacao>
+            <AcomodacaoPousada />
         
-        <SubtitlePousada>
-            Acomodações com todos os confortos de sua casa e muito mais. 
-            Venha conferir       
-        </SubtitlePousada>
-
-        <AcomodacaoPousada />
-
-        <TitleNovidade>QUER RECEBER NOVIDADES DOS EVENTOS E DISPONIBILIDADES DE VAGA?</TitleNovidade>
-
-        <SubtitlePousada>Coloque seu nome e-mail abaixo</SubtitlePousada>
-
-    
-    </Fragment>
+            <FormLead />                  
+            
+        </Section>            
+    </Wrapper>
 );
 
 export default Home;
