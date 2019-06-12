@@ -9,16 +9,17 @@ import { Form } from "../../components/FormLead/styles.js";
 export const Section = styled.section`
     display:flex;
     flex-direction: column;
-    align-items:center;
+    
     width:60%;
     min-width: 545px; 
     
     &> ${SubtitlePousada},
     &> ${AcomodacaoPousada} {
         margin-bottom: var(--spacing-big);
+        
     }  
     &> ${SubtitlePousada} {
-        text-align:center;
+        
         width: 500px;
     }
     &> ${TextPousada}{
@@ -30,9 +31,9 @@ export const Section = styled.section`
 `;
 
 export const Wrapper = styled.main `
-    background-color: var(--color-first);
+    background-color: var(--color-fundo);
     height:100vh;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:left;
 `;
