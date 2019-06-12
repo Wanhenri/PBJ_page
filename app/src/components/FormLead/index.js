@@ -14,7 +14,7 @@ const FormLead = () => {
     return(
         <Form>
             <TextPousada>
-            QUER RECEBER NOVIDADES DOS EVENTOS E DISPONIBILIDADES DE VAGA?.
+                QUER RECEBER NOVIDADES DOS EVENTOS E DISPONIBILIDADES DE VAGA?
             </TextPousada>
 
             <InputPousada placeholder="Nome"/>
