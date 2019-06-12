@@ -9,6 +9,7 @@ const Colors = createGlobalStyle`
         --color-second: #191637;
         --color-third: #EAE6DA;
         --color-fundo: #FFF6F6
+        --color-text: #484848
     }
 `
 
