@@ -12,7 +12,8 @@ const BtnPousada = styled.button.attrs({
     width:${({loading}) => loading ? "100%" : "140px"};
     height:40px;    
     border-radius: var(--radius-small);
-    color:var(--color-first);
+    color:var(--color-base);
+    /* Criado de acordo com o especificado no figma*/
     font-weight:bold;
     font-size:var(--size-small);
     cursor: pointer;
