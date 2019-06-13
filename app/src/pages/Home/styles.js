@@ -32,6 +32,7 @@ export const Section = styled.section`
 
 export const Wrapper = styled.main `
     background-color: var(--color-fundo);
+    background:linear-gradient(to bottom, var(-color-gradient-top),var(--color-gradient-medium),var(--color-gardient-bottom));
     height:100vh;
     display:flex;
     justify-content:center;
