@@ -10,7 +10,8 @@ const Colors = createGlobalStyle`
         --color-third: #EAE6DA;
         --color-fundo: #FFF6F6
         --color-text: #484848
-
+        
+        /*background*/
         --color-gradient-top:#FFFAFA
         --color-gradient-medium:#FEF9F9
         --color-gardient-bottom:#FFF6F6

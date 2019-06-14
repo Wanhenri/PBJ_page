@@ -6,7 +6,9 @@ import { Wrapper, Section } from './styles';
 
 import AcomodacaoPousada from "../../components/acomodacao";
 
-import TitleAcomodacao from "../../components/TitleAcomodacao"
+import HeaderPousada from "../../components/HeaderPousada";
+
+import TitleAcomodacao from "../../components/TitleAcomodacao";
 import TitleAjuda from "../../components/TitleAjuda"
 
 import SubtitlePousada from "../../components/SubtitlePousada";
@@ -14,6 +16,9 @@ import SubtitlePousada from "../../components/SubtitlePousada";
 const Home = () => (
     
     <Wrapper>
+
+        <HeaderPousada />
+
         <Section>
             <TitleAjuda>COMO PODEMOS TE AJUDAR?</TitleAjuda>
             <TitleAcomodacao>ACOMODAÇÕES COM QUALIDADE E CONFORTO</TitleAcomodacao>
@@ -22,7 +27,7 @@ const Home = () => (
                 Venha conferir       
             </SubtitlePousada>
 
-            <AcomodacaoPousada />
+            <AcomodacaoPousada />   
         
             <FormLead />                  
 
