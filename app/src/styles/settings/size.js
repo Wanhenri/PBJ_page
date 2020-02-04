@@ -4,6 +4,7 @@ import { createGlobalStyle} from "styled-components";
 const Size = createGlobalStyle `
     :root {
         --radius-small: 4px;
+        --radius-medium: 9px;
         --size-base:10px;
         --size-small:1.5em;
         --size-medium:1.1em;

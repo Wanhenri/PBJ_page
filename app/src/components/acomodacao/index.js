@@ -1,29 +1,25 @@
-
 import styled from "styled-components";
+import Inicio from "../../img/entrada.png";;
+
+export const Wrapper = styled.div`
+    transform: scale(1);
+`; 
 
 const AcomodacaoPousada = styled.div `
     display:inline-block;
-    background-color: #3f3d56;
-    width:430px;
-    height:346px;
+    background-image: url(${Inicio});
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto
+    /*display:inline-block;
+    border:1px solid #FFFF transparent;
+    border-radius: var(--radius-medium);
+    background-image: url(${Inicio});
+    width:100%;
+    height:100%; */
 `;
+
 
 export default AcomodacaoPousada;
 
-/*import React from "react";
-
-import { Header } from "./styles";
-
-import TitleAcomodacao from "../../components/TitleAcomodacao"
-
-import SubtitlePousada from "../../components/SubtitlePousada";
-
-import LogoAcomodacao from "../../objects/LogoAcomodacao";
-
-const Acomodacao = () => (
-    <Header>
-        <LogoAcomodacao   />
-    </Header>
-);
-
-export default Acomodacao; */
