@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-import SubtitlePousada from "../../components/SubtitlePousada";
-
-import AcomodacaoPousada from "../../components/acomodacao";
-
 export const TextPousada = styled.p `
     color:var(--color-text);
     font-size: var(--size-small);
@@ -49,26 +45,11 @@ export const Form = styled.form`
 export const Section = styled.section`
     display:flex;
     flex-direction: column;
-    padding-top:70px
+    /*padding-top:70px*/
     
+    height:70%;
     width:60%;
     min-width: 545px; 
-    
-    &> ${SubtitlePousada},
-    &> ${AcomodacaoPousada} {
-        margin-bottom: var(--spacing-big);
-        
-    }  
-    &> ${SubtitlePousada} {
-        
-        width: 500px;
-    }
-    &> ${TextPousada}{
-        margin-bottom: var(--spacing-small);
-    }
-    &> ${Form}{
-        min-width: 545px;
-    }
 `;
 
 export const Wrapper = styled.main `
@@ -77,5 +58,5 @@ export const Wrapper = styled.main `
     height:100vh;
     display:flex;
     justify-content:center;
-    align-items:left;
+    align-items:center;
 `;

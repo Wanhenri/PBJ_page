@@ -20,17 +20,11 @@ const Home = () => (
         <HeaderPousada />
 
         <Section>
-            <TitleAjuda>COMO PODEMOS TE AJUDAR?</TitleAjuda>
-            <TitleAcomodacao>ACOMODAÇÕES COM QUALIDADE E CONFORTO</TitleAcomodacao>
-            <SubtitlePousada>
-                Acomodações com todos os confortos de sua casa e muito mais. 
-                Venha conferir       
-            </SubtitlePousada>
-
-            <AcomodacaoPousada />   
-        
-            <FormLead />                  
-
+            <TitleAjuda/>
+            <TitleAcomodacao />
+            <SubtitlePousada />
+            <AcomodacaoPousada />        
+            <FormLead />         
         </Section>  
     </Wrapper>
 );

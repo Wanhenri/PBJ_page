@@ -7,7 +7,7 @@ export const Title = styled.h1`
     color: var(--color-second);
     font-size: var(--size-very-big);
     line-height:1.1em;
-    padding-top:80px;
+    padding-bottom:200px;
 `;
 export const Strong = styled.strong`
     color: var(--color-zero);
