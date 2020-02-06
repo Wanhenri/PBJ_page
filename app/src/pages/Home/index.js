@@ -13,6 +13,8 @@ import TitleAjuda from "../../components/TitleAjuda"
 
 import SubtitlePousada from "../../components/SubtitlePousada";
 
+import MenuCarousel from "../../components/menuCarousel"
+
 const Home = () => (
     
     <Wrapper>
@@ -21,6 +23,7 @@ const Home = () => (
 
         <Section>
             <TitleAjuda/>
+            <MenuCarousel />
             <TitleAcomodacao />
             <SubtitlePousada />
             <AcomodacaoPousada />        
