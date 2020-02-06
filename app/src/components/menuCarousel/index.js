@@ -14,11 +14,13 @@ const Wrapper = styled.div`
   margin:0 auto;
 `;
 
-function imageCarousel(props) {
+//implementar
+export default function imageCarousel(props) {
   return(
     <img
-      height="90"
-      src={props.imagem}
+      height={props.height}
+      alt= {props.title}
+      src={props.}
     ></img>
   )
 }
