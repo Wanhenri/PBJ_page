@@ -48,7 +48,7 @@ export const Section = styled.section`
     /*padding-top:70px*/
     
     height:70%;
-    width:60%;
+    width:75%;
     min-width: 545px; 
 `;
 

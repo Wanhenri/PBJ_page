@@ -6,13 +6,17 @@ import avatar from "../../img/topo-azul.png";
 const LogoAvatar = styled.img.attrs({
     src: avatar
 })`
-    width:10%;
+    float: left;
+    position: absolute;
+    margin: 15px 20px;
+    width:auto;
+    height: 90px;
     padding-left:15px;
 `;
 
 export const Header = styled.header`
     
-    padding-top:10px;
+    
     width:100vw;
     height:120px;
 
@@ -20,20 +24,23 @@ export const Header = styled.header`
     z-index:1;
     top:0;
     left:0;
-    display:flex;
-    flex-direction:column;
-    align-items:left;
-    justify-content:left;
-
-    &> ${LogoAvatar}{
-        
-    }
-
 `;
+
+const ColoredLine = ({ color }) => (
+    <hr 
+        style={{
+            color: color,
+            backgroundColor: color,
+            heigth: 2,
+            width: 100
+        }}
+    />
+)
 
 const HeaderPousada = () => (
     <Header>
         <LogoAvatar />
+        <ColoredLine color="#00033" />
     </Header>
 );
 

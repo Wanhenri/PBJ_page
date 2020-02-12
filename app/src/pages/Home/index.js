@@ -15,13 +15,25 @@ import SubtitlePousada from "../../components/SubtitlePousada";
 
 import MenuCarousel from "../../components/menuCarousel"
 
+const ColoredLine = ({ color }) => (
+    <hr 
+        style={{
+            color: color,
+            backgroundColor: color,
+            heigth: 200,
+            width: 100
+        }}
+    />
+)
+
+
 const Home = () => (
-    
+  
+
     <Wrapper>
 
-        <HeaderPousada />
-
-        <Section>
+        <Section >
+            <HeaderPousada />
             <TitleAjuda/>
             <MenuCarousel />
             <TitleAcomodacao />
