@@ -20,27 +20,16 @@ export const Header = styled.header`
     width:100vw;
     height:120px;
 
-    position:absolute;
+    position:sticky;
     z-index:1;
     top:0;
     left:0;
 `;
 
-const ColoredLine = ({ color }) => (
-    <hr 
-        style={{
-            color: color,
-            backgroundColor: color,
-            heigth: 2,
-            width: 100
-        }}
-    />
-)
 
 const HeaderPousada = () => (
     <Header>
         <LogoAvatar />
-        <ColoredLine color="#00033" />
     </Header>
 );
 

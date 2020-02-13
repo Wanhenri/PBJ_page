@@ -15,17 +15,6 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
-//implementar
-//export default function imageCarousel(props) {
-//  return(
-//    <img
-//      height={props.height}
-//      alt= {props.title}
-//      src={props.}
-//    ></img>
-//  )
-//}
-
 const MenuCarousel = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
   const chevronWidth = 40;

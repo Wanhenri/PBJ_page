@@ -45,7 +45,7 @@ export const Form = styled.form`
 export const Section = styled.section`
     display:flex;
     flex-direction: column;
-    /*padding-top:70px*/
+    padding-top:0;
     
     height:70%;
     width:75%;
@@ -55,8 +55,20 @@ export const Section = styled.section`
 export const Wrapper = styled.main `
     background-color: var(--color-fundo);
     /*background:linear-gradient(to bottom, black,var(--color-gradient-medium),var(--color-gardient-bottom)); */
-    height:100vh;
+    min-height:100vh;
+    min-width:100vw;
     display:flex;
     justify-content:center;
     align-items:center;
+`;
+
+export const ColoredLine = styled.hr`
+    display: block;
+    border: none;
+    border-top: 1px solid lightgrey;
+    color: rgba(0,0,0,0.65);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; 
+    line-height: 10px;
+    
 `;

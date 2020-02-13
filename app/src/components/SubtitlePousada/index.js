@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Title = styled.h2 `
     color: var(--color-second);
     font-size: var(--size-medium);
-    padding-bottom:200px;
+    padding-bottom:10px;
 `;
 
 const SubtitlePousada = () => (

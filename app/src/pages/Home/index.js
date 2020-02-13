@@ -2,7 +2,7 @@ import React from "react";
 
 import FormLead from "../../components/FormLead";
 
-import { Wrapper, Section } from './styles';
+import { Wrapper, Section, ColoredLine } from './styles';
 
 import AcomodacaoPousada from "../../components/acomodacao";
 
@@ -15,30 +15,20 @@ import SubtitlePousada from "../../components/SubtitlePousada";
 
 import MenuCarousel from "../../components/menuCarousel"
 
-const ColoredLine = ({ color }) => (
-    <hr 
-        style={{
-            color: color,
-            backgroundColor: color,
-            heigth: 200,
-            width: 100
-        }}
-    />
-)
 
 
-const Home = () => (
-  
+const Home = () => (  
 
     <Wrapper>
-
-        <Section >
+        <Section>
             <HeaderPousada />
+            <ColoredLine />
             <TitleAjuda/>
             <MenuCarousel />
+            <ColoredLine />
             <TitleAcomodacao />
             <SubtitlePousada />
-            <AcomodacaoPousada />        
+            <AcomodacaoPousada />  
             <FormLead />         
         </Section>  
     </Wrapper>
