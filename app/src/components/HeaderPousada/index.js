@@ -16,14 +16,18 @@ const LogoAvatar = styled.img.attrs({
 
 export const Header = styled.header`
     
-    
-    width:100vw;
+    background-color: #F25A70; /*var(--color-gradient-medium);*/
+    box-sizing: border-box;
+    max-width:100vw;
+    width:100%;
     height:120px;
 
     position:sticky;
     z-index:1;
     top:0;
-    left:0;
+    
+    display: flex;
+    text-align: center;
 `;
 
 
