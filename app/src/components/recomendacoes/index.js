@@ -8,11 +8,14 @@ export const Title = styled.h1`
     font-size: var(--size-very-big);
     line-height:1.1em;
     padding-bottom:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 `;
 
-
 const TitleAjuda = () => (
-    <Title>COMO PODEMOS TE AJUDAR?</Title>
+    <Title>RECOMENDAÇÕES</Title>
 );
 
 export default TitleAjuda;

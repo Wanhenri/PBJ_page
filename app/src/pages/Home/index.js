@@ -15,6 +15,11 @@ import SubtitlePousada from "../../components/SubtitlePousada";
 
 import MenuCarousel from "../../components/menuCarousel"
 
+import Recomendacoes from "../../components/recomendacoes"
+
+//import ListaRecomendacoes from "../../components/ListaRecomendacoes"
+
+
 
 
 const Home = () => (  
@@ -22,6 +27,11 @@ const Home = () => (
     <Wrapper>
         <Section>
             <HeaderPousada />
+            <ColoredLine />
+            <TitleAcomodacao />
+            <SubtitlePousada />
+            <AcomodacaoPousada /> 
+            <Recomendacoes />
             <ColoredLine />
             <TitleAjuda/>
             <MenuCarousel />
