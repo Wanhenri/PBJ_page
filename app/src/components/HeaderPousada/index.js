@@ -9,9 +9,9 @@ const LogoAvatar = styled.img.attrs({
 })`
     float: left;
     position: absolute;
-    margin: 15px 20px;
+    margin: 12px 20px;
     width:auto;
-    height: 90px;
+    height: 55px;
     padding-left:15px;
 `;
 
@@ -20,9 +20,9 @@ const LogoPostal = styled.img.attrs({
 })`
     float: right;
     position: absolute;
-    margin: 35px 20px;
+    margin: 15px 1200px;
     width:auto;
-    height: 90px;
+    height: 20px;
     padding-left:15px;
     
 `;
@@ -33,7 +33,7 @@ export const Header = styled.header`
     box-sizing: border-box;
     max-width:100vw;
     width:100%;
-    height:120px;
+    height:55px;
 
     position:sticky;
     z-index:1;

@@ -6,12 +6,12 @@ export const AcomodacaoPousada = styled.img.attrs({
     src: logoEntrada
 }) `
     
-    width: 50%;
+    width: 75%;
     height: 50%;
     margin: 10px auto 20px;
     display:block;
     border: 1px solid #FFF transparent;
-    border-radius: var(--radius-medium);
+    border-radius: 42px; /*var(--radius-medium); */
   
 `;
 
