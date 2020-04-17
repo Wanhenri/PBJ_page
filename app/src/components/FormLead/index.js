@@ -5,13 +5,13 @@ import styled, {css} from "styled-components";
 export const TextPousada = styled.p `
     color:var(--color-text);
     font-size: var(--size-small);
-    font-weight:bold;
+    
 `;
 
 export const InputPousada = styled.input`
     background-color: var(--color-negative-light);
     box-sizing:border-box;
-    width:190px;
+    width:350px;
     height:38px;
     border-radius: var(--radius-small);
     padding-left: var(--spacing-small);
@@ -80,7 +80,9 @@ export const Form = styled.form`
         margin-bottom: var(--spacing-small);
     }
     &> ${InputPousada}{
-        margin-right: var(--spacing-small);
+        margin-right: 20px;
+        margin-top:30px
+        margin-botton:30px
     }
 `;
 
@@ -92,10 +94,17 @@ const FormLead = () => {
 
     return(
         <Form>
-            <TextPousada>
+            <TextPousada 
+                style={{ 
+                    paddingTop:70, 
+                    fontWeight:'bold' }}
+                >
                 QUER RECEBER NOVIDADES DOS EVENTOS E DISPONIBILIDADES DE VAGA?
+            </TextPousada >
+            <TextPousada 
+                style={{ paddingTop:30,  }}>
+                     Coloque seu nome e e-mail abaixo
             </TextPousada>
-
             <InputPousada placeholder="Nome"/>
             <InputPousada placeholder="Email"/>
 

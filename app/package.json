@@ -6,6 +6,7 @@
     "antd": "^3.26.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.9.0",
     "react-items-carousel": "^2.8.0",
     "react-scripts": "0.9.5",
     "styled-components": "^4.3.1"
