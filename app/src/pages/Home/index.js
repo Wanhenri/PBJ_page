@@ -2,49 +2,55 @@ import React from "react";
 
 import FormLead from "../../components/FormLead";
 
-import { Wrapper, Section, ColoredLine } from './styles';
+import { Wrapper, Section, ColoredLine } from "./styles";
 
 import AcomodacaoPousada from "../../components/acomodacao";
 
-import HeaderPousada from "../../components/HeaderPousada";
+import HeaderPousada from "../../components/Header";
 
-import TitleAcomodacao from "../../components/TitleAcomodacao";
-import TitleAjuda from "../../components/TitleAjuda"
+import Title from "../../components/Title";
 
-import SubtitlePousada from "../../components/SubtitlePousada";
+import Subtitle from "../../components/Subtitle";
 
-import MenuCarousel from "../../components/menuCarousel"
+import MenuCarousel from "../../components/menuCarousel";
 
-import Recomendacoes from "../../components/recomendacoes"
+import ListaRecomendacoes from "../../components/ListaRecomendacoes";
 
-//import ListaRecomendacoes from "../../components/ListaRecomendacoes"
+const Home = () => (
+  <Wrapper>
+    <Section>
+      <ColoredLine />
 
+      <Title content={"ACOMODAÇÕES COM QUALIDADE E CONFORTO"} />
+      <Subtitle
+        content={
+          "Acomodações com todos os confortos de sua casa e muito mais.< br/> Venha conferir"
+        }
+      />
+      <AcomodacaoPousada />
+      <ColoredLine />
 
+      <Title content={"RECOMENDAÇÕES"} />
+      <ListaRecomendacoes />
+      <ColoredLine />
 
+      <Title content={"COMO PODEMOS TE AJUDAR?"} />
+      <MenuCarousel />
+      <ColoredLine />
 
-const Home = () => (  
-
-    <Wrapper>
-        <Section>
-            <HeaderPousada />
-            <ColoredLine />
-
-            <TitleAcomodacao />
-            <SubtitlePousada />
-            <AcomodacaoPousada /> 
-            <Recomendacoes />
-            <ColoredLine />
-
-            <TitleAjuda/>
-            <MenuCarousel />
-            <ColoredLine />
-            
-            <TitleAcomodacao />
-            <SubtitlePousada />
-            <AcomodacaoPousada />  
-            <FormLead />         
-        </Section>  
-    </Wrapper>
+      <Title content={"ACOMODAÇÕES COM QUALIDADE E CONFORTO"} />
+      <Subtitle
+        content={
+          <span>
+            Acomodações com todos os confortos de sua casa e muito mais.
+            <br /> Venha conferir
+          </span>
+        }
+      />
+      <AcomodacaoPousada />
+      <FormLead />
+    </Section>
+  </Wrapper>
 );
 
 export default Home;
