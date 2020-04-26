@@ -7,8 +7,8 @@ const Size = createGlobalStyle `
         --radius-medium: 9px;
         --size-base:10px;
         --size-small:1.5em;
-        --size-medium:1.1em;
-        --size-very-big:1.5em;
+        --size-medium:1.4em;
+        --size-very-big:2.4em;
     }
     @media (max-height:700px) {
         :root{

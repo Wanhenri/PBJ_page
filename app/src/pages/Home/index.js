@@ -28,14 +28,17 @@ const Home = () => (
         <Section>
             <HeaderPousada />
             <ColoredLine />
+
             <TitleAcomodacao />
             <SubtitlePousada />
             <AcomodacaoPousada /> 
             <Recomendacoes />
             <ColoredLine />
+
             <TitleAjuda/>
             <MenuCarousel />
             <ColoredLine />
+            
             <TitleAcomodacao />
             <SubtitlePousada />
             <AcomodacaoPousada />  

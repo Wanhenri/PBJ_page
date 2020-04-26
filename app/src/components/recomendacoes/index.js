@@ -16,13 +16,13 @@ export const Title = styled.h1`
 
 `;
 
-const TitleAjuda = () => (
+const Recomendacoes = () => (
     <div>
         <Title>RECOMENDAÇÕES</Title>
         <ListaRecomendacoes />
     </div>
 );
 
-export default TitleAjuda;
+export default Recomendacoes;
 
 

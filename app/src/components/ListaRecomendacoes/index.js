@@ -21,31 +21,52 @@ export default function ListaRecomendacoes(){
     const recomenda = [
         {
             name: "turismo",
-            height: "230", 
-            width: "330",
+            height: "130", 
+            width: "200",
             alt: "",
             image: require("../../img/recomendacoes/laspezia.png")
         },
         {
             name: "serviços",
-            height: "230", 
-            width: "330",
+            height: "130", 
+            width: "200",
             alt: "",
             image: require("../../img/recomendacoes/pepizza.jpg")
         },
         {
             name: "restaurante",
-            height: "230", 
-            width: "330",
+            height: "130", 
+            width: "200",
             alt: "",
             image: require("../../img/recomendacoes/supernovataxi.png")
         },
         {
             name: "eventos",
-            height: "230", 
-            width: "330",
+            height: "130", 
+            width: "200",
             alt: "",
             image: require("../../img/recomendacoes/vignettos.jpg")
+        },
+        {
+            name: "eventos",
+            height: "130", 
+            width: "200",
+            alt: "",
+            image: require("../../img/recomendacoes/pizzapuccini.jpg")
+        },
+        {
+            name: "eventos",
+            height: "130", 
+            width: "200",
+            alt: "",
+            image: require("../../img/recomendacoes/esfirraria.png")
+        },
+        {
+            name: "eventos",
+            height: "130", 
+            width: "200",
+            alt: "",
+            image: require("../../img/recomendacoes/comidajaponesa.jpg")
         },
     ];
     return (

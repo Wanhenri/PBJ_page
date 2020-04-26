@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom'
 
 import avatar from "../../img/topo-azul.png";
 import postal from "../../img/postal.png";
@@ -44,11 +45,15 @@ export const Header = styled.header`
 `;
 
 
-const HeaderPousada = () => (
-    <Header>
-        <LogoAvatar />
-        <LogoPostal />
-    </Header>
-);
+const HeaderPousada = () => {
+  const activeStyle = { color: "#F15B2A" }
+
+  return(
+  <Header>
+      <LogoAvatar />
+      
+      <LogoPostal />
+  </Header>
+)};
 
 export default HeaderPousada;
