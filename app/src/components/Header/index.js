@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import avatar from "../../img/topo-azul.png";
 import postal from "../../img/postal.png";
@@ -14,21 +14,14 @@ const LogoAvatar = styled.img.attrs({
   padding-left: 15px;
 `;
 
-const LogoPostal = styled.img.attrs({
-  src: postal,
-})`
-  float: right;
-  width: auto;
-  height: 20px;
-  padding-left: 15px;
-`;
-
 export const Header = styled.header`
   background-color: var(--color-gradient-medium);
   box-sizing: border-box;
   max-width: 100vw;
   width: 100%;
   height: 60px;
+  display: flex;
+  flex-direction: row;
 
   position: sticky;
   z-index: 1;
@@ -43,20 +36,85 @@ export const Header = styled.header`
 export default () => {
   const activeStyle = { backgroundColor: "#F15B2A" };
 
+
+
   return (
-    <Header>
-      <NavLink
-        to={"/"}
-        activeStyle={activeStyle}
-        style={{
-          height: "100%",
-        }}
+    <Header >
+      <Link
+        to={"/"}       
       >
-        <LogoAvatar />
-      </NavLink>
-      <NavLink to={"/fale-conosco"} activeStyle={activeStyle}>
-        <LogoPostal />
-      </NavLink>
+        <LogoAvatar
+          style={{
+          height: "100%",
+        }} />
+      </Link>
+      <Link 
+        to="/" 
+        style={{
+          display: "inline-block",
+          fontSize:" 1.9em",
+          color: "var(--color-second)",
+          height: "20px",
+          marginLeft: "1000px", 
+          marginRight: "20px",
+          paddingTop:"20px",
+          textDecoration: "none"
+        }}>
+          Acomodações
+      </Link>
+      <Link 
+        to="/agenda" 
+        style={{
+          display: "inline-block",
+          fontSize:" 1.9em",
+          color: "var(--color-second)",
+          height: "20px",
+          
+          marginRight: "20px",
+          paddingTop:"20px",
+          textDecoration: "none"
+        }}>
+          Agenda
+      </Link>
+      <Link 
+        to="/" 
+        style={{
+          display: "inline-block",
+          fontSize: "1.9em",
+          color: "var(--color-second)",
+          height: "20px",
+          marginRight: "20px",
+          marginTop: "20px",
+          textDecoration: "none" 
+          }} 
+        >Experiencias
+      </Link>
+      <Link 
+        to="/ajuda" 
+        style={{
+          display: "inline-block",
+          fontSize: "1.9em",
+          color: "var(--color-second)",
+          height: "20px",
+          marginRight: "20px",
+          marginTop: "20px",
+          textDecoration: "none"
+        }} 
+        >Ajuda
+      </Link>
+      <Link 
+        to={"/fale-conosco"}        
+        style={{
+          display: "inline-block",
+          fontSize: "1.9em",
+          color: "var(--color-second)",
+          height: "20px", 
+          marginRight: "20px",
+          marginTop: "20px",
+          textDecoration: "none"
+        }}> 
+        Contato        
+      </Link>
     </Header>
   );
 };
