@@ -4,17 +4,14 @@ import Title from "../../components/Title";
 import CarouselComponent from "../../components/InfiniteCarousel";
 
 const Agenda = () => (
-   <Wrapper>
-     <Section>
-
-       <ColoredLine />
-       <Title content={"AGENDA"} />
-       <CarouselComponent />
-       <ColoredLine />
-
-
-     </Section>
-   </Wrapper>
+  <Wrapper>
+    <Section>
+      <ColoredLine />
+      <Title content={"AGENDA"} />
+      <CarouselComponent />
+      <ColoredLine />
+    </Section>
+  </Wrapper>
 );
 
 export default Agenda;

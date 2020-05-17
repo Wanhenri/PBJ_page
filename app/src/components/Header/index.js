@@ -1,120 +1,34 @@
 import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-import avatar from "../../img/topo-azul.png";
-import postal from "../../img/postal.png";
-
-const LogoAvatar = styled.img.attrs({
-  src: avatar,
-})`
-  float: left;
-  width: auto;
-  height: -webkit-fill-available;
-  padding-left: 15px;
-`;
-
-export const Header = styled.header`
-  background-color: var(--color-gradient-medium);
-  box-sizing: border-box;
-  max-width: 100vw;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-
-  position: sticky;
-  z-index: 1;
-  top: 0;
-
-  text-align: center;
-  img {
-    margin: auto auto;
-  }
-`;
+import { Link, Header, LogoAvatar } from "./style";
 
 export default () => {
-  const activeStyle = { backgroundColor: "#F15B2A" };
-
-
+  const activeStyle = {
+    borderBottom: "1px grey solid",
+  };
 
   return (
-    <Header >
-      <Link
-        to={"/"}       
-      >
-        <LogoAvatar
-          style={{
-          height: "100%",
-        }} />
+    <Header>
+      <Link to={"/"}>
+        <LogoAvatar />
       </Link>
-      <Link 
-        to="/" 
-        style={{
-          display: "inline-block",
-          fontSize:" 1.9em",
-          color: "var(--color-second)",
-          height: "20px",
-          marginLeft: "1000px", 
-          marginRight: "20px",
-          paddingTop:"20px",
-          textDecoration: "none"
-        }}>
+      <div style={{ float: "right", padding: "10px 0", marginRight: 20 }}>
+        <Link to="/" exact activeStyle={activeStyle}>
           Acomodações
-      </Link>
-      <Link 
-        to="/agenda" 
-        style={{
-          display: "inline-block",
-          fontSize:" 1.9em",
-          color: "var(--color-second)",
-          height: "20px",
-          
-          marginRight: "20px",
-          paddingTop:"20px",
-          textDecoration: "none"
-        }}>
+        </Link>
+        <Link to="/agenda" exact activeStyle={activeStyle}>
           Agenda
-      </Link>
-      <Link 
-        to="/" 
-        style={{
-          display: "inline-block",
-          fontSize: "1.9em",
-          color: "var(--color-second)",
-          height: "20px",
-          marginRight: "20px",
-          marginTop: "20px",
-          textDecoration: "none" 
-          }} 
-        >Experiencias
-      </Link>
-      <Link 
-        to="/ajuda" 
-        style={{
-          display: "inline-block",
-          fontSize: "1.9em",
-          color: "var(--color-second)",
-          height: "20px",
-          marginRight: "20px",
-          marginTop: "20px",
-          textDecoration: "none"
-        }} 
-        >Ajuda
-      </Link>
-      <Link 
-        to={"/fale-conosco"}        
-        style={{
-          display: "inline-block",
-          fontSize: "1.9em",
-          color: "var(--color-second)",
-          height: "20px", 
-          marginRight: "20px",
-          marginTop: "20px",
-          textDecoration: "none"
-        }}> 
-        Contato        
-      </Link>
+        </Link>
+        <Link to="/experiencias" exact activeStyle={activeStyle}>
+          Experiencias
+        </Link>
+        <Link to="/ajuda" exact activeStyle={activeStyle}>
+          Ajuda
+        </Link>
+        <Link to="/fale-conosco" exact activeStyle={activeStyle}>
+          Contato
+        </Link>
+      </div>
     </Header>
   );
 };
