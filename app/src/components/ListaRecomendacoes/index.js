@@ -1,6 +1,5 @@
 import React from "react";
 import { Image, Recomendacoes } from "./style";
-import { Link } from "react-router-dom";
 
 export default function ListaRecomendacoes() {
   const recomenda = [
