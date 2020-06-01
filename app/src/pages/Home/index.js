@@ -1,8 +1,8 @@
 import React from "react";
 
-import FormLead from "../../components/FormLead";
+import { ColoredLine } from '../../objects/ColoredLine'
 
-import { Wrapper, Section, ColoredLine } from "./styles";
+import { Wrapper, Section } from "./styles";
 
 import AcomodacaoPousada from "../../components/acomodacao";
 

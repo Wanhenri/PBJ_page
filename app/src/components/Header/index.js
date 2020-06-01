@@ -8,10 +8,8 @@ export default () => {
   };
 
   return (
-    <Header>
-      <Link to={"/"}>
-        <LogoAvatar />
-      </Link>
+    <Header>     
+        <LogoAvatar />    
       <div style={{ float: "right", padding: "10px 0", marginRight: 20 }}>
         <Link to="/" exact activeStyle={activeStyle}>
           Acomodações

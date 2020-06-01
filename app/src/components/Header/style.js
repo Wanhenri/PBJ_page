@@ -7,7 +7,7 @@ export const LogoAvatar = styled.img.attrs({
   src: avatar,
 })`
   float: left;
-  width: auto;
+  width: 8%;
   height: -webkit-fill-available;
   padding-left: 15px;
 `;
