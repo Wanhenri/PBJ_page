@@ -7,6 +7,6 @@ export const Card = styled.article`
   background: #fafafa;
   border: 1px solid #fefefe;
   box-sizing: border-box;
-  border-radius: 45px;
+  border-radius: 1%;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 `;

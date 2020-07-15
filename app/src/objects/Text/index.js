@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Text = styled.p`
   color: #6B6B6B;
-  font-size: var(--size-very-big);
+  font-size: var(--size-small);
   line-height: 1.1em;
   padding-top: 10px;
   padding-bottom: 15px;

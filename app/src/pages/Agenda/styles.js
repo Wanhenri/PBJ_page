@@ -25,11 +25,11 @@ export const DateBlogWrapper = styled.div`
 
 export const DateBlog = styled.p`
   color: #6b6b6b;
-  font-size: var(--size-very-big);
+  font-size: var(--size-small);
   line-height: 1.1em;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 5px;
 `;
 
 export const InfoBlogWrapper = styled.section`
